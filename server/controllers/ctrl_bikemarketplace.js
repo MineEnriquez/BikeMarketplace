@@ -10,9 +10,9 @@ module.exports = {
         console.log(_newbike);
         bike = new Bike(_newbike);
         bike.save()
-            .then(saveResult => res.JSON(saveResult))
+            .then(saveResult => res.json(saveResult))
             .catch(err => {
-                console.log("Error crating a new Restaurant record");
+                console.log("Error crating a new Bike record, please make sure the contract is correct");
                 res.json(err);
             });
     }

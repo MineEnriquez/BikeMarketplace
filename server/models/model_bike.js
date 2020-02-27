@@ -12,7 +12,7 @@ const BikesSchema = new mongoose.Schema({
     }]
 
 }, { timestamps: true })
-const Bike = mongoose.model('bikemodel', BikesSchema);
+const Bike = mongoose.model('mongodb_bikes', BikesSchema);
 
 //Exports:
 module.exports = {
